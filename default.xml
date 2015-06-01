@@ -95,9 +95,9 @@
 
   <project path="frameworks/base" name="nDroidProject/android_frameworks_base" />
   <project path="frameworks/policies/base" name="nDroidProject/android_frameworks_policies_base" />
-  <project path="hardware/libhardware" name="nDroidProject/android_hardware/libhardware" />
-  <project path="hardware/libhardware_legacy" name="nDroidProject/android_hardware/libhardware_legacy" />
-  <project path="hardware/ril" name="nDroidProject/android_hardware/ril" />
+  <project path="hardware/libhardware" name="nDroidProject/android_hardware_libhardware" />
+  <project path="hardware/libhardware_legacy" name="nDroidProject/android_hardware_libhardware_legacy" />
+  <project path="hardware/ril" name="nDroidProject/android_hardware_ril" />
 
   <project path="packages/apps/AlarmClock" name="nDroidProject/android_packages_apps_AlarmClock" />
   <project path="packages/apps/Browser" name="nDroidProject/android_packages_apps_Browser" />
