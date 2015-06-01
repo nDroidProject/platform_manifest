@@ -6,7 +6,7 @@
            review="android-review.googlesource.com" />
   <remote  name="github"
            fetch=".." />
-  <default revision="nDroid-1.6"
+  <default revision="refs/heads/nDroid-1.6"
            remote="github"
            sync-j="4" />
 
