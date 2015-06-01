@@ -96,7 +96,7 @@
   <project path="frameworks/base" name="nDroidProject/android_frameworks_base" />
   <project path="frameworks/opt/com.google.android" name="nDroidProject/android_frameworks_opt_com.google.android" />
   <project path="frameworks/opt/com.google.android.googlelogin" name="nDroidProject/android_frameworks_opt_com.google.android.googlelogin" />
-  <project path="frameworks/opt/emoji" name="android_frameworks_opt_emoji" />
+  <project path="frameworks/opt/emoji" name="nDroidProject/android_frameworks_opt_emoji" />
   <project path="frameworks/policies/base" name="nDroidProject/android_frameworks_policies_base" />
   <project path="hardware/libhardware" name="nDroidProject/android_hardware_libhardware" />
   <project path="hardware/libhardware_legacy" name="nDroidProject/android_hardware_libhardware_legacy" />
