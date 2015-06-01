@@ -2,152 +2,130 @@
 <manifest>
 
   <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com" />
+  <remote  name="github"
            fetch=".." />
-  <default revision="refs/tags/android-1.6_r2"
-           remote="aosp"
+  <default revision="nDroid-1.6"
+           remote="github"
            sync-j="4" />
 
-  <project path="build" name="platform/build">
+  <project path="build" name="nDroidProject/android_build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="bionic" name="platform/bionic" />
+  <project path="bionic" name="nDroidProject/android_bionic" />
 
-  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
-  <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" />
+  <project path="dalvik" name="nDroidProject/android_dalvik" />
+  <project path="development" name="nDroidProject/android_development" />
 
-  <project path="dalvik" name="platform/dalvik" />
-  <project path="development" name="platform/development" />
+  <project path="external/aes" name="nDroidProject/android_external_aes" />
+  <project path="external/apache-http" name="nDroidProject/android_external_apache-http" />
+  <project path="external/astl" name="nDroidProject/android_external_astl" />
+  <project path="external/bison" name="nDroidProject/android_external_bison" />
+  <project path="external/blktrace" name="nDroidProject/android_external_blktrace" />
+  <project path="external/bluez" name="nDroidProject/android_external_bluez" />
+  <project path="external/bsdiff" name="nDroidProject/android_external_bsdiff" />
+  <project path="external/bzip2" name="nDroidProject/android_external_bzip2" />
+  <project path="external/clearsilver" name="nDroidProject/android_external_clearsilver" />
+  <project path="external/dbus" name="nDroidProject/android_external_dbus" />
+  <project path="external/dhcpcd" name="nDroidProject/android_external_dhcpcd" />
+  <project path="external/dosfstools" name="nDroidProject/android_external_dosfstools" />
+  <project path="external/dropbear" name="nDroidProject/android_external_dropbear" />
+  <project path="external/e2fsprogs" name="nDroidProject/android_external_e2fsprogs" />
+  <project path="external/eglib" name="nDroidProject/android_external_eglib" />
+  <project path="external/elfcopy" name="nDroidProject/android_external_elfcopy" />
+  <project path="external/elfutils" name="nDroidProject/android_external_elfutils" />
+  <project path="external/embunit" name="nDroidProject/android_external_embunit" />
+  <project path="external/emma" name="nDroidProject/android_external_emma" />
+  <project path="external/esd" name="nDroidProject/android_external_esd" />
+  <project path="external/expat" name="nDroidProject/android_external_expat" />
+  <project path="external/fdlibm" name="nDroidProject/android_external_fdlibm" />
+  <project path="external/freetype" name="nDroidProject/android_external_freetype" />
+  <project path="external/fsck_msdos" name="nDroidProject/android_external_fsck_msdos" />
+  <project path="external/gdata" name="nDroidProject/android_external_gdata" />
+  <project path="external/genext2fs" name="nDroidProject/android_external_genext2fs" />
+  <project path="external/giflib" name="nDroidProject/android_external_giflib" />
+  <project path="external/googleclient" name="nDroidProject/android_external_googleclient" />
+  <project path="external/grub" name="nDroidProject/android_external_grub" />
+  <project path="external/gtest" name="nDroidProject/android_external_gtest" />
+  <project path="external/hcidump" name="nDroidProject/android_external_hcidump" />
+  <project path="external/icu4c" name="nDroidProject/android_external_icu4c" />
+  <project path="external/ipsec-tools" name="nDroidProject/android_external_ipsec-tools" />
+  <project path="external/iptables" name="nDroidProject/android_external_iptables" />
+  <project path="external/jdiff" name="nDroidProject/android_external_jdiff" />
+  <project path="external/jhead" name="nDroidProject/android_external_jhead" />
+  <project path="external/jpeg" name="nDroidProject/android_external_jpeg" />
+  <project path="external/junit" name="nDroidProject/android_external_junit" />
+  <project path="external/kernel-headers" name="nDroidProject/android_external_kernel-headers" />
+  <project path="external/lcc" name="nDroidProject/android_external_lcc" />
+  <project path="external/libffi" name="nDroidProject/android_external_libffi" />
+  <project path="external/libpcap" name="nDroidProject/android_external_libpcap" />
+  <project path="external/libpng" name="nDroidProject/android_external_libpng" />
+  <project path="external/libxml2" name="nDroidProject/android_external_libxml2" />
+  <project path="external/mtpd" name="nDroidProject/android_external_mtpd" />
+  <project path="external/netcat" name="nDroidProject/android_external_netcat" />
+  <project path="external/netperf" name="nDroidProject/android_external_netperf" />
+  <project path="external/neven" name="nDroidProject/android_external_neven" />
+  <project path="external/opencore" name="nDroidProject/android_external_opencore" />
+  <project path="external/openssl" name="nDroidProject/android_external_openssl" />
+  <project path="external/oprofile" name="nDroidProject/android_external_oprofile" />
+  <project path="external/ping" name="nDroidProject/android_external_ping" />
+  <project path="external/ppp" name="nDroidProject/android_external_ppp" />
+  <project path="external/protobuf" name="nDroidProject/android_external_protobuf" />
+  <project path="external/qemu" name="nDroidProject/android_external_qemu" />
+  <project path="external/safe-iop" name="nDroidProject/android_external_safe-iop" />
+  <project path="external/skia" name="nDroidProject/android_external_skia" />
+  <project path="external/sonivox" name="nDroidProject/android_external_sonivox" />
+  <project path="external/speex" name="nDroidProject/android_external_speex" />
+  <project path="external/sqlite" name="nDroidProject/android_external_sqlite" />
+  <project path="external/srec" name="nDroidProject/android_external_srec" />
+  <project path="external/strace" name="nDroidProject/android_external_strace" />
+  <project path="external/svox" name="nDroidProject/android_external_svox" />
+  <project path="external/tagsoup" name="nDroidProject/android_external_tagsoup" />
+  <project path="external/tcpdump" name="nDroidProject/android_external_tcpdump" />
+  <project path="external/tinyxml" name="nDroidProject/android_external_tinyxml" />
+  <project path="external/tremor" name="nDroidProject/android_external_tremor" />
+  <project path="external/webkit" name="nDroidProject/android_external_webkit" />
+  <project path="external/wpa_supplicant" name="nDroidProject/android_external_wpa_supplicant" />
+  <project path="external/xdelta3" name="nDroidProject/android_external_xdelta3" />
+  <project path="external/xmlwriter" name="nDroidProject/android_external_xmlwriter" />
+  <project path="external/yaffs2" name="nDroidProject/android_external_yaffs2" />
+  <project path="external/zlib" name="nDroidProject/android_external_zlib" />
 
-  <project path="external/aes" name="platform/external/aes" />
-  <project path="external/apache-http" name="platform/external/apache-http" />
-  <project path="external/astl" name="platform/external/astl" />
-  <project path="external/bison" name="platform/external/bison" />
-  <project path="external/blktrace" name="platform/external/blktrace" />
-  <project path="external/bluez" name="platform/external/bluez" />
-  <project path="external/bsdiff" name="platform/external/bsdiff" />
-  <project path="external/bzip2" name="platform/external/bzip2" />
-  <project path="external/clearsilver" name="platform/external/clearsilver" />
-  <project path="external/dbus" name="platform/external/dbus" />
-  <project path="external/dhcpcd" name="platform/external/dhcpcd" />
-  <project path="external/dosfstools" name="platform/external/dosfstools" />
-  <project path="external/dropbear" name="platform/external/dropbear" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" />
-  <project path="external/eglib" name="platform/external/eglib" />
-  <project path="external/elfcopy" name="platform/external/elfcopy" />
-  <project path="external/elfutils" name="platform/external/elfutils" />
-  <project path="external/embunit" name="platform/external/embunit" />
-  <project path="external/emma" name="platform/external/emma" />
-  <project path="external/esd" name="platform/external/esd" />
-  <project path="external/expat" name="platform/external/expat" />
-  <project path="external/fdlibm" name="platform/external/fdlibm" />
-  <project path="external/freetype" name="platform/external/freetype" />
-  <project path="external/fsck_msdos" name="platform/external/fsck_msdos" />
-  <project path="external/gdata" name="platform/external/gdata" />
-  <project path="external/genext2fs" name="platform/external/genext2fs" />
-  <project path="external/giflib" name="platform/external/giflib" />
-  <project path="external/googleclient" name="platform/external/googleclient" />
-  <project path="external/grub" name="platform/external/grub" />
-  <project path="external/gtest" name="platform/external/gtest" />
-  <project path="external/hcidump" name="platform/external/hcidump" />
-  <project path="external/icu4c" name="platform/external/icu4c" />
-  <project path="external/ipsec-tools" name="platform/external/ipsec-tools" />
-  <project path="external/iptables" name="platform/external/iptables" />
-  <project path="external/jdiff" name="platform/external/jdiff" />
-  <project path="external/jhead" name="platform/external/jhead" />
-  <project path="external/jpeg" name="platform/external/jpeg" />
-  <project path="external/junit" name="platform/external/junit" />
-  <project path="external/kernel-headers" name="platform/external/kernel-headers" />
-  <project path="external/lcc" name="platform/external/lcc" />
-  <project path="external/libffi" name="platform/external/libffi" />
-  <project path="external/libpcap" name="platform/external/libpcap" />
-  <project path="external/libpng" name="platform/external/libpng" />
-  <project path="external/libxml2" name="platform/external/libxml2" />
-  <project path="external/mtpd" name="platform/external/mtpd" />
-  <project path="external/netcat" name="platform/external/netcat" />
-  <project path="external/netperf" name="platform/external/netperf" />
-  <project path="external/neven" name="platform/external/neven" />
-  <project path="external/opencore" name="platform/external/opencore" />
-  <project path="external/openssl" name="platform/external/openssl" />
-  <project path="external/oprofile" name="platform/external/oprofile" />
-  <project path="external/ping" name="platform/external/ping" />
-  <project path="external/ppp" name="platform/external/ppp" />
-  <project path="external/protobuf" name="platform/external/protobuf" />
-  <project path="external/qemu" name="platform/external/qemu" />
-  <project path="external/safe-iop" name="platform/external/safe-iop" />
-  <project path="external/skia" name="platform/external/skia" />
-  <project path="external/sonivox" name="platform/external/sonivox" />
-  <project path="external/speex" name="platform/external/speex" />
-  <project path="external/sqlite" name="platform/external/sqlite" />
-  <project path="external/srec" name="platform/external/srec" />
-  <project path="external/strace" name="platform/external/strace" />
-  <project path="external/svox" name="platform/external/svox" />
-  <project path="external/tagsoup" name="platform/external/tagsoup" />
-  <project path="external/tcpdump" name="platform/external/tcpdump" />
-  <project path="external/tinyxml" name="platform/external/tinyxml" />
-  <project path="external/tremor" name="platform/external/tremor" />
-  <project path="external/webkit" name="platform/external/webkit" />
-  <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" />
-  <project path="external/xdelta3" name="platform/external/xdelta3" />
-  <project path="external/xmlwriter" name="platform/external/xmlwriter" />
-  <project path="external/yaffs2" name="platform/external/yaffs2" />
-  <project path="external/zlib" name="platform/external/zlib" />
+  <project path="frameworks/base" name="nDroidProject/android_frameworks_base" />
+  <project path="frameworks/policies/base" name="nDroidProject/android_frameworks_policies_base" />
+  <project path="hardware/libhardware" name="nDroidProject/android_hardware/libhardware" />
+  <project path="hardware/libhardware_legacy" name="nDroidProject/android_hardware/libhardware_legacy" />
+  <project path="hardware/ril" name="nDroidProject/android_hardware/ril" />
 
-  <project path="frameworks/base" name="platform/frameworks/base" />
-  <project path="frameworks/opt/com.google.android" name="platform/frameworks/opt/com.google.android" />
-  <project path="frameworks/opt/com.google.android.googlelogin" name="platform/frameworks/opt/com.google.android.googlelogin" />
-  <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
-  <project path="frameworks/policies/base" name="platform/frameworks/policies/base" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
-  <project path="hardware/msm7k" name="platform/hardware/msm7k" />
-  <project path="hardware/ril" name="platform/hardware/ril" />
+  <project path="packages/apps/AlarmClock" name="nDroidProject/android_packages_apps_AlarmClock" />
+  <project path="packages/apps/Browser" name="nDroidProject/android_packages_apps_Browser" />
+  <project path="packages/apps/Calculator" name="nDroidProject/android_packages_apps_Calculator" />
+  <project path="packages/apps/Calendar" name="nDroidProject/android_packages_apps_Calendar" />
+  <project path="packages/apps/Email" name="nDroidProject/android_packages_apps_Email" />
+  <project path="packages/apps/GlobalSearch" name="nDroidProject/android_packages_apps_GlobalSearch" />
+  <project path="packages/apps/GoogleSearch" name="nDroidProject/android_packages_apps_GoogleSearch" />
+  <project path="packages/apps/HTMLViewer" name="nDroidProject/android_packages_apps_HTMLViewer" />
+  <project path="packages/apps/Launcher" name="nDroidProject/android_packages_apps_Launcher" />
+  <project path="packages/apps/PackageInstaller" name="nDroidProject/android_packages_apps_PackageInstaller" />
+  <project path="packages/apps/Settings" name="nDroidProject/android_packages_apps_Settings" />
+  <project path="packages/apps/Stk" name="nDroidProject/android_packages_apps_Stk" />
+  <project path="packages/inputmethods/OpenWnn" name="nDroidProject/android_packages_inputmethods_OpenWnn" />
+  <project path="packages/providers/ApplicationsProvider" name="nDroidProject/android_packages_providers_ApplicationsProvider" />
+  <project path="packages/providers/CalendarProvider" name="nDroidProject/android_packages_providers_CalendarProvider" />
+  <project path="packages/providers/DownloadProvider" name="nDroidProject/android_packages_providers_DownloadProvider" />
+  <project path="packages/providers/DrmProvider" name="nDroidProject/android_packages_providers_DrmProvider" />
+  <project path="packages/providers/MediaProvider" name="nDroidProject/android_packages_providers_MediaProvider" />
+  <project path="packages/providers/UserDictionaryProvider" name="nDroidProject/android_packages_providers_UserDictionaryProvider" />
+  <project path="packages/providers/WebSearchProvider" name="nDroidProject/android_packages_providers_WebSearchProvider" />
 
-  <project path="packages/apps/AlarmClock" name="platform/packages/apps/AlarmClock" />
-  <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
-  <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
-  <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
-  <project path="packages/apps/Camera" name="platform/packages/apps/Camera" />
-  <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
-  <project path="packages/apps/Email" name="platform/packages/apps/Email" />
-  <project path="packages/apps/GlobalSearch" name="platform/packages/apps/GlobalSearch" />
-  <project path="packages/apps/GoogleSearch" name="platform/packages/apps/GoogleSearch" />
-  <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
-  <project path="packages/apps/IM" name="platform/packages/apps/IM" />
-  <project path="packages/apps/Launcher" name="platform/packages/apps/Launcher" />
-  <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
-  <project path="packages/apps/Music" name="platform/packages/apps/Music" />
-  <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
-  <project path="packages/apps/Phone" name="platform/packages/apps/Phone" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
-  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
-  <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
-  <project path="packages/apps/Sync" name="platform/packages/apps/Sync" />
-  <project path="packages/apps/Updater" name="platform/packages/apps/Updater" />
-  <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
-  <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" />
-  <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" />
-  <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" />
-  <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
-  <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
-  <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" />
-  <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" />
-  <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" />
-  <project path="packages/providers/GoogleContactsProvider" name="platform/packages/providers/GoogleContactsProvider" />
-  <project path="packages/providers/GoogleSubscribedFeedsProvider" name="platform/packages/providers/GoogleSubscribedFeedsProvider" />
-  <project path="packages/providers/ImProvider" name="platform/packages/providers/ImProvider" />
-  <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" />
-  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
-  <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" />
-  <project path="packages/providers/WebSearchProvider" name="platform/packages/providers/WebSearchProvider" />
+  <project path="prebuilt" name="nDroidProject/android_prebuilt" />
+  <project path="system/bluetooth" name="nDroidProject/android_system_bluetooth" />
+  <project path="system/core" name="nDroidProject/android_system_core" />
+  <project path="system/extras" name="nDroidProject/android_system_extras" />
+  <project path="system/wlan/ti" name="nDroidProject/android_system_wlan_ti" />
 
-  <project path="prebuilt" name="platform/prebuilt" />
-  <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="platform/system/core" />
-  <project path="system/extras" name="platform/system/extras" />
-  <project path="system/wlan/ti" name="platform/system/wlan/ti" />
-
-  <project path="vendor/sample" name="platform/vendor/sample" />
+  <project path="vendor/sample" name="nDroidProject/android_vendor_sample" />
 
 </manifest>
