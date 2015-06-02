@@ -120,6 +120,7 @@
   <project path="packages/providers/DownloadProvider" name="nDroidProject/android_packages_providers_DownloadProvider" />
   <project path="packages/providers/DrmProvider" name="nDroidProject/android_packages_providers_DrmProvider" />
   <project path="packages/providers/MediaProvider" name="nDroidProject/android_packages_providers_MediaProvider" />
+  <project path="packages/providers/TelephonyProvider" name="nDroidProject/android_packages_providers_TelephonyProvider" />
   <project path="packages/providers/UserDictionaryProvider" name="nDroidProject/android_packages_providers_UserDictionaryProvider" />
   <project path="packages/providers/WebSearchProvider" name="nDroidProject/android_packages_providers_WebSearchProvider" />
 
