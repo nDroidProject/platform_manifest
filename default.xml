@@ -16,6 +16,8 @@
 
   <project path="bionic" name="nDroidProject/android_bionic" />
 
+  <project path="bootable/recovery" name="nDroidProject/android_bootable_recovery" />
+
   <project path="dalvik" name="nDroidProject/android_dalvik" />
   <project path="development" name="nDroidProject/android_development" />
 
