@@ -131,5 +131,6 @@
   <project path="system/wlan/ti" name="nDroidProject/android_system_wlan_ti" />
 
   <project path="vendor/sample" name="nDroidProject/android_vendor_sample" />
+  <project path="vendor/ti/nspire" name="nDroidProject/android_vendor_ti_nspire" />
 
 </manifest>
